@@ -4,17 +4,26 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { AppDataService } from './app-data.service';
+import { AnswerItemGroupComponent } from './answer-item-group/answer-item-group.component';
+import { ScaleItemGroupComponent } from './scale-item-group/scale-item-group.component';
+import { AnswerItemComponent } from './answer-item-group/answer-item.component';
+import { ScaleItemComponent } from './scale-item-group/scale-item/scale-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AnswerItemGroupComponent,
+    ScaleItemGroupComponent,
+    AnswerItemComponent,
+    ScaleItemComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [AppDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
