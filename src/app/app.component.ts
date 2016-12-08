@@ -11,7 +11,7 @@ import { ScaleItem } from './scale-item-group/scale-item';
 })
 export class AppComponent{
   //activeItem:AnswerItem;
-  
+  testChange;
   selectedScale:ScaleItem;
   constructor(private appData:AppDataService) {
      //console.log(this.appData.appDataModel.aAnswerGroups);
