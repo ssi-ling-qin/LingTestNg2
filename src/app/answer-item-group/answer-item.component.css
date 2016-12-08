@@ -7,3 +7,6 @@
     -o-transform: translateY(-50%);
 
 }
+.disabled{
+	opacity:0.5;
+}

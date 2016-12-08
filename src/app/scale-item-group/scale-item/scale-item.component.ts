@@ -1,4 +1,4 @@
-import { Component, OnInit,Input} from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { ScaleItem } from '../scale-item';
 
 @Component({
@@ -7,7 +7,8 @@ import { ScaleItem } from '../scale-item';
   styleUrls: ['./scale-item.component.css']
 })
 export class ScaleItemComponent implements OnInit {
-  @Input() scaleItem:ScaleItem
+  @Input() scaleItem:ScaleItem;
+
   constructor() { }
 
   ngOnInit() {

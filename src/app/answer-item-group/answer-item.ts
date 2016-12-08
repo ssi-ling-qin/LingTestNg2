@@ -5,8 +5,8 @@ export class AnswerItem {
         public value:string,
         public label:string,
         public isOE:boolean,
-        public sOEValue:string
-
+        public sOEValue:string,
+        public isActive?:boolean
     ) { 
     
     }

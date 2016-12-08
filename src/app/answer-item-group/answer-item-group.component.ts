@@ -1,4 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
+import { AnswerItem } from './answer-item';
 
 @Component({
   selector: 'app-answer-item-group',
@@ -7,8 +8,9 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class AnswerItemGroupComponent implements OnInit {
   @Input() answerItemGroup;
+
   constructor() { 
-    
+
   }
 
   ngOnInit() {
