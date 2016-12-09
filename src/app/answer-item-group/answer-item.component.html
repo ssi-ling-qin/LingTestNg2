@@ -1,4 +1,4 @@
 
-<div class="dnd-item card ui-draggable" [attr.data-value]="answerItem.code" [ngClass]="{'disabled':!answerItem.isActive}">
+<div class="dnd-item card ui-draggable" [attr.data-value]="answerItem.code" [ngClass]="{'disabled':!answerItem.isActive && answerItem.isOrginal}" [hidden]="answerItem.value && answerItem.isOrginal">
   <div class="dnd-label">{{answerItem.label}}</div>
 </div>

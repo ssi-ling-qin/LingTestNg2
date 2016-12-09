@@ -1,3 +1,5 @@
+import { ScaleItem } from '../scale-item-group/scale-item';
+
 export class AnswerItem {
     constructor(
         public code:string,
@@ -6,8 +8,13 @@ export class AnswerItem {
         public label:string,
         public isOE:boolean,
         public sOEValue:string,
-        public isActive?:boolean
+        public groupIndex:number,
+        public inGroupIndex:number,  
+        public isOrginal:boolean,            
+        public isActive?:boolean,
+        public selectedSlot?:ScaleItem
     ) { 
     
     }
+
 }

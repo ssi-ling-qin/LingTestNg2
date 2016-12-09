@@ -1,8 +1,9 @@
 <div class="main" >
   <div class="targets">
-    <app-scale-item-group *ngFor="let scaleGroup of appData.appDataModel.aScaleGroups" [scaleItemGroup]="scaleGroup" (scaleItemClicked)="scaleItemclickReceived($event)"></app-scale-item-group>
+    <!--<app-scale-item-group *ngFor="let scaleGroup of appScaleGroups" [scaleItemGroup]="scaleGroup" (scaleItemClicked)="scaleItemclickReceived($event)"></app-scale-item-group>-->
+    <app-scale-item-group *ngFor="let scaleGroup of appData.appScaleGroups" [scaleItemGroup]="scaleGroup"></app-scale-item-group>
   </div>
   <div class="source ui-droppable">
-      <app-answer-item-group *ngFor="let answerGroup of appData.appDataModel.aAnswerGroups" [answerItemGroup]="answerGroup"></app-answer-item-group>
+      <app-answer-item-group *ngFor="let answerGroup of appData.appAnswerGroups" [answerItemGroup]="answerGroup"></app-answer-item-group>
   </div>
 </div>

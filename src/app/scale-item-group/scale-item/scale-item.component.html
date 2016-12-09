@@ -1,4 +1,6 @@
-<div class="target gradient ui-droppable" [id]="'target_'+scaleItem.code" [attr.data-value]="scaleItem.code">
+<div class="target gradient ui-droppable" [id]="'target_'+scaleItem.code" [attr.data-value]="scaleItem.code" (click)="onClick($event,scaleItem)">
   <div class="header success">{{scaleItem.label}}</div>
-  <div class="dnd-holder inset"></div>
+  <div class="dnd-holder inset">
+       <app-answer-inslot *ngFor="let answerItem of scaleItem.answersedItems" [answerItem]="answerItem"></app-answer-inslot>
+  </div>
 </div>

@@ -9,6 +9,8 @@ import { AnswerItemGroupComponent } from './answer-item-group/answer-item-group.
 import { ScaleItemGroupComponent } from './scale-item-group/scale-item-group.component';
 import { AnswerItemComponent } from './answer-item-group/answer-item.component';
 import { ScaleItemComponent } from './scale-item-group/scale-item/scale-item.component';
+import { AnswerInslotComponent } from './answer-item-group/answer-inslot.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { ScaleItemComponent } from './scale-item-group/scale-item/scale-item.com
     AnswerItemGroupComponent,
     ScaleItemGroupComponent,
     AnswerItemComponent,
-    ScaleItemComponent
+    ScaleItemComponent,
+    AnswerInslotComponent
   ],
   imports: [
     BrowserModule,

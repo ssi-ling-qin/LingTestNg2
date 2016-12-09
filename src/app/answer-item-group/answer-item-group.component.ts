@@ -1,4 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
+import { AppDataService } from '../app-data.service';
+import { AnswerItemGroup } from './answer-item-group';
 import { AnswerItem } from './answer-item';
 
 @Component({
@@ -13,7 +15,7 @@ export class AnswerItemGroupComponent implements OnInit {
 
   }
 
-  ngOnInit() {
+  ngOnInit() {  
 
   }
 
